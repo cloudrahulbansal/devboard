@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevBoard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,system-ui,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4c1d95,#6d28d9,#8b5cf6);
+    color:white;
+}
+
+.card{
+    width:90%;
+    max-width:420px;
+    padding:2rem;
+    border-radius:24px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#ddd6fe;
+}
+
+p{
+    margin:12px 0 24px;
+    opacity:.85;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.stat{
+    padding:14px;
+    border-radius:16px;
+    background:rgba(255,255,255,.1);
+    text-align:center;
+}
+
+.stat h3{
+    font-size:1.4rem;
+}
+
+button{
+    width:100%;
+    margin-top:24px;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:white;
+    color:#5b21b6;
+    font-weight:600;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="logo">Dev<span>Board</span></div>
+
+        <p>Track tasks, monitor progress, and ship features faster.</p>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>12</h3>
+                <small>Tasks</small>
+            </div>
+            <div class="stat">
+                <h3>5</h3>
+                <small>Active</small>
+            </div>
+            <div class="stat">
+                <h3>87%</h3>
+                <small>Done</small>
+            </div>
+        </div>
+
+        <button>Open Dashboard</button>
+    </div>
+</body>
+</html>
